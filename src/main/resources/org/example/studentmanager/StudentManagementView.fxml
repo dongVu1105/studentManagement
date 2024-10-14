@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="498.0" prefWidth="722.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.studentmanager.Controller">
+   <children>
+      <TableView fx:id="table" layoutX="14.0" layoutY="31.0" prefHeight="437.0" prefWidth="443.0">
+        <columns>
+          <TableColumn fx:id="idColumn" prefWidth="48.0" text="ID" />
+          <TableColumn fx:id="nameColumn" prefWidth="152.79999160766602" text="Name" />
+            <TableColumn fx:id="emailColumn" minWidth="0.0" prefWidth="137.6000213623047" text="Email" />
+            <TableColumn fx:id="ageColumn" minWidth="8.800048828125" prefWidth="104.79998779296875" text="Age" />
+        </columns>
+      </TableView>
+      <Button layoutX="520.0" layoutY="242.0" mnemonicParsing="false" onAction="#add" text="Add" />
+      <Label layoutX="477.0" layoutY="53.0" text="ID" />
+      <Label layoutX="467.0" layoutY="101.0" text="Name" />
+      <Label layoutX="469.0" layoutY="147.0" text="Email" />
+      <Label layoutX="472.0" layoutY="191.0" text="Age" />
+      <TextField fx:id="idText" layoutX="520.0" layoutY="49.0" />
+      <TextField fx:id="nameText" layoutX="520.0" layoutY="97.0" />
+      <TextField fx:id="emailText" layoutX="520.0" layoutY="143.0" />
+      <TextField fx:id="ageText" layoutX="520.0" layoutY="187.0" />
+      <Button layoutX="618.0" layoutY="242.0" mnemonicParsing="false" onAction="#delete" text="Delete" />
+   </children>
+</AnchorPane>
